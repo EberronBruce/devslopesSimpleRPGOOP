@@ -21,13 +21,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="tOB-4l-Oem">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chest" translatesAutoresizingMaskIntoConstraints="NO" id="Rgs-fD-dZP">
-                                <rect key="frame" x="383" y="378" width="200" height="143"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eN2-ld-uoI">
+                                <rect key="frame" x="409" y="372" width="151" height="149"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="143" id="TJB-WX-1tY"/>
-                                    <constraint firstAttribute="width" constant="200" id="t3f-09-aDP"/>
+                                    <constraint firstAttribute="height" constant="149" id="6P2-hk-kbG"/>
+                                    <constraint firstAttribute="width" constant="151" id="DdV-fe-jDz"/>
                                 </constraints>
-                            </imageView>
+                                <state key="normal" image="chest"/>
+                                <connections>
+                                    <action selector="onChestTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RKm-4W-7Ub"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="print" translatesAutoresizingMaskIntoConstraints="NO" id="ZOD-Vy-oGE">
                                 <rect key="frame" x="80" y="15" width="440" height="68"/>
                                 <constraints>
@@ -95,6 +99,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdW-uy-fPr">
+                                <rect key="frame" x="252" y="491" width="97" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="WnX-y6-GDk"/>
+                                    <constraint firstAttribute="width" constant="97" id="c9t-ZC-7DQ"/>
+                                </constraints>
+                                <state key="normal" image="attack"/>
+                                <connections>
+                                    <action selector="attackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufA-wJ-ZX4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -105,23 +120,38 @@
                             <constraint firstAttribute="bottom" secondItem="tOB-4l-Oem" secondAttribute="bottom" id="6oo-Ta-RhE"/>
                             <constraint firstItem="ZOD-Vy-oGE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="15" id="6wz-fh-NID"/>
                             <constraint firstItem="wMu-IB-wtJ" firstAttribute="centerX" secondItem="ZOD-Vy-oGE" secondAttribute="centerX" id="AC6-bz-dDV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eN2-ld-uoI" secondAttribute="bottom" constant="79" id="Bzg-JL-j7C"/>
                             <constraint firstItem="tOB-4l-Oem" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Dpd-xm-y3R"/>
                             <constraint firstAttribute="trailing" secondItem="6z7-8g-DtT" secondAttribute="trailing" constant="15" id="E8a-hD-57C"/>
                             <constraint firstItem="4kI-Th-tSC" firstAttribute="top" secondItem="nwk-TM-e5C" secondAttribute="bottom" constant="115" id="EMU-xp-ZNW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DdW-uy-fPr" secondAttribute="bottom" id="Id2-KJ-wVM"/>
                             <constraint firstAttribute="bottom" secondItem="vDg-VA-I2i" secondAttribute="bottom" constant="-5" id="P86-1U-5e4"/>
                             <constraint firstItem="nwk-TM-e5C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="136" id="R0w-Ra-QWT"/>
                             <constraint firstAttribute="bottom" secondItem="4kI-Th-tSC" secondAttribute="bottom" constant="-5" id="Tls-JQ-qux"/>
                             <constraint firstItem="vDg-VA-I2i" firstAttribute="leading" secondItem="4kI-Th-tSC" secondAttribute="trailing" id="Uuj-nF-I7c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eN2-ld-uoI" secondAttribute="trailing" constant="20" id="YcP-fC-mCf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZZv-w4-OlZ" secondAttribute="bottom" constant="79" id="cOm-4O-2DI"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rgs-fD-dZP" secondAttribute="bottom" constant="79" id="hIY-Lc-OoW"/>
-                            <constraint firstAttribute="trailing" secondItem="Rgs-fD-dZP" secondAttribute="trailing" constant="17" id="l5O-TU-c2O"/>
+                            <constraint firstItem="DdW-uy-fPr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i1q-79-DdF"/>
                             <constraint firstItem="fxS-UT-VAM" firstAttribute="centerY" secondItem="nwk-TM-e5C" secondAttribute="centerY" id="mRy-5R-wqO"/>
                             <constraint firstItem="ZZv-w4-OlZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="oPT-EE-4nE"/>
                             <constraint firstItem="4kI-Th-tSC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="omT-sO-k1M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fxS-UT-VAM" secondAttribute="trailing" constant="141" id="x6M-F9-p9p"/>
                             <constraint firstItem="tOB-4l-Oem" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yAc-LS-ru9"/>
+                            <constraint firstAttribute="trailing" secondItem="DdW-uy-fPr" secondAttribute="trailing" constant="13" id="zuJ-EM-PI8"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zuJ-EM-PI8"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="chestBtn" destination="eN2-ld-uoI" id="I8z-Lr-e6Z"/>
+                        <outlet property="enemyHpLbl" destination="mRy-5R-wqO" id="G1B-O2-DQh"/>
+                        <outlet property="enemyImage" destination="6z7-8g-DtT" id="GsA-ky-2GR"/>
+                        <outlet property="playerHpLbl" destination="nwk-TM-e5C" id="yHJ-3v-tig"/>
+                        <outlet property="printLbl" destination="wMu-IB-wtJ" id="5Hp-2d-a4a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,6 +159,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="attack" width="198" height="223"/>
         <image name="bg" width="768" height="1024"/>
         <image name="chest" width="393" height="440"/>
         <image name="enem1" width="574" height="487"/>
