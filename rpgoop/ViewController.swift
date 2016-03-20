@@ -41,6 +41,8 @@ class ViewController: UIViewController {
         } else {
             enemy = DevilWizard(startingHp: 50, attackPwr: 15)
         }
+        
+        enemyImage.hidden = false
            
         
         
@@ -57,6 +59,7 @@ class ViewController: UIViewController {
         
         if enemy.attemptAttack(player.attackPwr) {
             printLbl.text = "Attacked \(enemy.type) for \(player.attackPwr) HP"
+            enemyHpLbl.text = "\(enemy.hp) HP"
         } else {
             printLbl.text = "Attack was unsuccessful!"
         }
