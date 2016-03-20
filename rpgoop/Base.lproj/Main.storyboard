@@ -147,7 +147,7 @@
                     </view>
                     <connections>
                         <outlet property="chestBtn" destination="eN2-ld-uoI" id="I8z-Lr-e6Z"/>
-                        <outlet property="enemyHpLbl" destination="mRy-5R-wqO" id="G1B-O2-DQh"/>
+                        <outlet property="enemyHpLbl" destination="fxS-UT-VAM" id="ct4-Dc-9uA"/>
                         <outlet property="enemyImage" destination="6z7-8g-DtT" id="GsA-ky-2GR"/>
                         <outlet property="playerHpLbl" destination="nwk-TM-e5C" id="yHJ-3v-tig"/>
                         <outlet property="printLbl" destination="wMu-IB-wtJ" id="5Hp-2d-a4a"/>
